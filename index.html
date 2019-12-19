@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Quiz Game</title>
+   
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <header class="tabs">
+      <button id="score-btn" class="high-btn">View Highscores</button>
+      <div class="countdown">
+        <label for="quiz-seconds">Time:</label>
+        <div id="seconds">75</div>
+      </div>
+    </header>
+    <div class="box">
+      <div id="question-container" class="hide">
+        <div id="question">Question</div>
+        <div id="answer-buttons" class="btn-grid">
+          <button class="btn">Answer 1</button>
+          <button class="btn">Answer 2</button>
+          <button class="btn">Answer 3</button>
+          <button class="btn">Answer 4</button>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="bold">
+          <h1>Coding Quiz Challenge</h1>
+        </div>
+        <p>
+          As a coding bootcamp student I want to take a timed quiz on JavaScript
+          fundamentals that stores high scores <br> so that I can gauge my progress
+          compared to my peers
+        </p>
+
+        <button id="start-btn" class="start">Start Quiz</button>
+      </div>
+    </div>
+    <script src="questions.js"></script>
+  </body>
+</html>
